@@ -89,6 +89,7 @@ public class Phonebook {
 				return;
 			}
 		}
+		System.out.print("Contact doesn't exists!");
 	}
 	
 	private void printAllContacts() {}
@@ -103,6 +104,9 @@ public class Phonebook {
 				System.out.printf("%d. %s - %s", counter, contact.getName(), contact.getPhoneNumber());
 				counter++;
 			}
+		}
+		if (counter == 1) {
+			System.out.print("Contact doesn't exists!");
 		}
 	}
 
